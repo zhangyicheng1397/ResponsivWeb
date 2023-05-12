@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0"
+          name="viewport">
+    <link href="http://at.alicdn.com/t/c/font_3280202_xagkc0vczkm.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="css/head_foot.css" rel="stylesheet">
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/index.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        a {
+            text-decoration: none;
+            color: #898989;
+        }
+
+        /*banner-css代码start*/
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 4.1958rem;
+        }
+
+        .mySwiper1 {
+            width: 100%;
+            height: 100%;
+        }
+
+        .mySwiper1 .swiper-slide {
+            text-align: center;
+            font-size: .1259rem;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .mySwiper1 .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .mySwiper1 div[class^="swiper-button-"] {
+            opacity: .6;
+            position: absolute;
+            background-color: #CCC;
+            color: white;
+        }
+
+        .banner .lyban {
+            z-index: 5;
+            display: block;
+            width: 1.3986rem;
+            height: .3497rem;
+            background-color: #4d6ef1;
+            border-radius: .0559rem .0559rem 0 0;
+            position: absolute;
+            bottom: -0.2028rem;
+            left: .6993rem;
+            line-height: .3497rem;
+            padding-left: .1399rem;
+            color: white;
+        }
+
+        .ziaxian {
+            cursor: pointer;
+            z-index: 5;
+            position: fixed;
+            right: 0;
+            top: 450px;
+            background-color: #00aef3;
+            border-radius: 5px;
+            width: 130px;
+            height: 50px;
+        }
+
+        .ziaxian p {
+            color: white;
+            text-align: center;
+        }
+
+        .ziaxian p:last-child {
+            position: absolute;
+            bottom: -8px;
+            font-size: 12px;
+        }
+
+        /*banner-css代码end*/
+        /*关于我们css代码start*/
+        .about_us {
+            width: 80%;
+            margin: .3497rem auto 0;
+            font-size: .0979rem;
+        }
+
+        .about_us .about_con {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            align-items: center;
+            line-height: .2797rem;
+        }
+
+        .about_bs {
+            color: #d81801
+        }
+
+        .about_us .yewu {
+            display: flex;
+            width: 100%;
+            margin: 10px auto 0;
+            /*border: 1px solid red;*/
+        }
+
+        .about_us .yewu .yewukuo {
+            display: flex;
+            align-items: center;
+        }
+
+        .about_us .yewu .yewukuo .yewu_con {
+            margin: .1049rem;
+        }
+
+        .about_us .yewu .yewukuo .yewu_con .about_ti {
+            margin-bottom: .0699rem;
+        }
+
+        .about_us .yewu .yewukuo img {
+            margin: .1399rem;
+            width: 35px;
+        }
+
+        .hexin {
+            width: 5.5944rem;
+            /*border: 1px solid red;*/
+            margin: .1399rem auto;
+        }
+
+        .hexin {
+            width: 80%;
+            /* border: 1px solid black; */
+            text-align: center;
+            font-size: .1399rem;
+        }
+
+        .he_title {
+            display: block;
+            margin: .2098rem 0;
+        }
+
+        .hexin_kuo {
+            /* border: 1px solid red; */
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .hexin_kuo .hexin_js {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hexin_kuo img {
+            margin: .1399rem auto;
+            width: .6993rem;
+            height: .6993rem;
+        }
+
+        /*关于我们-css代码end*/
+        /*精品案例css代码start*/
+        .ycase {
+            width: 80%;
+            /* border: 1px solid red; */
+            margin: .1399rem auto;
+        }
+
+        .ycase_head {
+            text-align: center;
+        }
+
+        .ycase_xuan {
+            width: 15%;
+            /* border: 1px solid red; */
+            display: flex;
+            margin: 10px auto;
+        }
+
+        .ycase_xuan div {
+            cursor: pointer;
+            line-height: .2797rem;
+            font-size: .0909rem;
+            flex: 1;
+            height: .2797rem;
+        }
+
+        .ycase_xuan div[class="y_xuan"] {
+            background-color: #333333;
+            color: white;
+        }
+
+        .cases {
+            width: 100%;
+            /* border: 1px solid black; */
+        }
+
+        .cases ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            font-size: .1119rem;
+        }
+
+        .cases ul li {
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            /* border: 1px solid blueviolet; */
+            margin: .035rem;
+            flex: 23%;
+            /* height: 1.3287rem; */
+        }
+
+        .cases ul li img {
+            width: 1.8951rem;
+            height: 1.0839rem;
+            display: block;
+        }
+
+        /*精品案例css代码end*/
+        /*客户说css代码start*/
+        .khs {
+            position: relative;
+            width: 100%;
+            height: 3.1469rem;
+            background-color: #030303;
+        }
+
+        .khs_box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: 2.3077rem;
+            /* border: 1px solid yellow; */
+        }
+
+        .khs_box .khs_title {
+            margin: .0699rem 0;
+            font-family: "宋体";
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 30%;
+            /* border: 1px solid red; */
+        }
+
+        .khs_box .khs_gun {
+            width: 100%;
+            height: 70%;
+            /* border: 1px solid green; */
+        }
+
+        .mySwiper2 {
+            width: 100%;
+            height: 100%;
+        }
+
+        .mySwiper2 .swiper-slide {
+            text-align: center;
+            font-size: .1259rem;
+            background: #030303;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .mySwiper2 div[class^="swiper-button-"] {
+            opacity: .6;
+            position: absolute;
+            color: #7f7f7f;
+        }
+
+        .mySwiper2 .swiper-slide .xianzhi {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+        }
+
+        .mySwiper2 .swiper-slide .xianzhi b {
+            margin: .0699rem 0;
+        }
+
+        /*客户说css代码end*/
+        /*Industry-css代码start*/
+        .Industry {
+            width: 80%;
+            margin: .0699rem auto 0;
+            height: 2.0979rem;
+            /* border: 1px solid red; */
+        }
+
+        .Industry .ind_title {
+            margin: .3497rem 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .Industry .ind_title .hangye_more {
+            cursor: pointer;
+            color: #666666;
+            font-size: .1119rem;
+            text-align: center;
+            line-height: .2797rem;
+            width: .7692rem;
+            height: .2797rem;
+            border: 1px solid #666666;
+        }
+
+        .Industry .ind_content {
+            display: flex;
+            width: 100%;
+            height: 1.2587rem;
+            margin: .1399rem 0;
+            /* border: 1px solid green; */
+        }
+
+        .Industry .ind_content .ind_con_item {
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+            flex: 50%;
+            margin: 10px
+            /* border: 1px solid rebeccapurple; */
+        }
+
+        .Industry .ind_content .ind_con_item .ind_text {
+            font-size: .1049rem;
+            color: #666666;
+            width: 2.0979rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .Industry .ind_content .ind_con_item:nth-of-type(1) .ind_tp {
+            width: 1.6084rem;
+            height: .8392rem;
+            background: url("img/创意1.jpg") no-repeat 0 0/1.6084rem .8392rem;
+        }
+
+        .Industry .ind_content .ind_con_item:nth-of-type(2) .ind_tp {
+            width: 1.6084rem;
+            height: .8392rem;
+            background: url("img/创意2.jpg") no-repeat 0 0/1.6084rem .8392rem;
+        }
+
+        /*Industry-css代码end*/
+
+        /*移动端适配*/
+
+        /*banner适配*/
+        @media screen and (max-width: 750px) {
+            .banner {
+                height: 500px;
+                background: url(modio_img/modio_banner.jpg) no-repeat 0 0/100% 500px;
+                background-size: 100% 500px;
+            }
+
+            .mySwiper1, .lyban {
+                display: none !important;
+            }
+
+            .ziaxian {
+                display: none;
+            }
+
+            .modio_ban_text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                width: 230px;
+                display: flex !important;
+                flex-direction: column;
+                align-items: center;
+                height: 50px;
+            }
+        }
+
+        /*关于我们-适配*/
+        @media screen and (max-width: 750px) {
+            .about_us {
+                width: 100%;
+            }
+
+            .bs_tit {
+                font-size: 22px !important;
+                margin: 40px 0 !important;
+            }
+
+            .bs_con {
+                font-size: 16px;
+                margin: 0 8px
+            }
+
+            .about_us .about_con span:nth-child(n+2) {
+                margin: 5px 0;
+            }
+
+            .about_us .yewu {
+                margin: 10px 0;
+            }
+
+            .about_us .yewu .yewukuo:last-child {
+                display: none;
+            }
+
+            .about_us .yewu .yewukuo {
+                flex: 45%;
+                align-items: baseline;
+            }
+
+            .about_us .hexin .he_title {
+                font-size: 22px;
+                margin: 20px 0;
+            }
+
+            .hexin {
+                width: 90%;
+            }
+
+            .hexin .hexin_js {
+                flex: 1;
+                margin: 5px;
+                height: 150px;
+                border: 1px solid #ccc;
+                justify-content: center;
+            }
+
+            .hexin .hexin_js img {
+                transform: scale(.6);
+            }
+
+            .hexin .hexin_js span {
+                width: 25px;
+            }
+        }
+
+        /*精品案例-适配*/
+        @media screen and (max-width: 750px) {
+            .ycase {
+                width: 90%;
+            }
+
+            .ycase_xuan {
+                width: 42%;
+            }
+
+            .ycase_xuan div {
+                height: 27px;
+                line-height: 27px;
+                font-size: 10px;
+            }
+
+            .cases ul li {
+                margin: 5px 1px;
+                flex: 49%;
+                line-height: 35px;
+            }
+
+            .cases ul li img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .ycase_more {
+                margin: 20px auto;
+                display: block !important;
+                width: 100px;
+                text-align: center;
+                font-size: 14px;
+                height: 30px;
+                background-color: #bf0303;
+                color: white;
+                line-height: 30px;
+            }
+        }
+
+        /*khs-适配*/
+        @media screen and (max-width: 750px) {
+            .khs {
+                height: 300px;
+            }
+
+            .khs div[class^="swiper-button-"] {
+                display: none;
+            }
+
+            .khs .khs_gun img {
+                width: 75px !important;
+            }
+
+            .khs_box {
+                height: 276px;
+            }
+
+            .khs_box .khs_title {
+                margin-top: 12px;
+            }
+
+            .khs_box .khs_title h3 {
+                font-size: 25px !important;
+            }
+
+            .khs_box .khs_title span {
+                font-size: 12px;
+            }
+
+            .khs_gun .mySwiper2 .swiper-slide {
+                align-items: flex-start;
+            }
+        }
+
+        /*Industry-适配*/
+        @media screen and (max-width: 750px) {
+            .Industry {
+                width: 90%;
+                height: 100%;
+                margin: 40px auto;
+            }
+
+            .Industry .ind_title {
+                margin: 30px auto;
+            }
+
+            .Industry .ind_title .hangye_tit > span {
+                font-size: 22px !important;
+            }
+
+            .Industry .ind_title .hangye_more {
+                width: 70px;
+                height: 30px;
+                line-height: 30px;
+            }
+
+            .Industry .ind_content {
+                height: 200px;
+                flex-direction: column;
+            }
+
+            .Industry .ind_content .ind_con_item .ind_text {
+                width: 200px;
+            }
+
+            .Industry .ind_content .ind_con_item .ind_tp {
+                width: 125px !important;
+                height: 75px !important;
+                background: url("img/创意1.jpg") no-repeat 0 0/125px 75px !important;
+            }
+
+            .Industry .ind_content .ind_con_item:nth-child(2) .ind_tp {
+                background: url("img/创意2.jpg") no-repeat 0 0/125px 75px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <a class="logo" href="#"></a>
+    <ul>
+        <div class="iconfont icon-liebiao2" style="display: none;"></div>
+        <li><a class="nav_xuan" href="index.html">首页</a></li>
+        <li><a href="about_us.html">关于我们</a></li>
+        <li><a href="case.html">精品案例</a></li>
+        <li><a href="Industry.html">行业动态</a></li>
+        <li><a href="team.html">团队架构</a></li>
+        <li><a href="contact.html">联系我们</a></li>
+    </ul>
+</nav>
+<div class="banner">
+    <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/banner1.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/banner2.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/banner3.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/banner4.png">
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination" style="color: black"></div>
+    </div>
+    <a class="lyban" href="#">留言板</a>
+    <div class="modio_ban_text" style="display: none;">
+        <span style="font-size: .1259rem;margin: 5px 0;font-weight: bold;">领先前端的制作水平</span>
+        <span style="font-size: .0979rem;">Leading front end production level</span>
+    </div>
+    <div class="ziaxian">
+        <p style="font-weight: normal;font-size: 23px">在线咨询</p>
+        <p>hello worldhello world</p>
+    </div>
+</div>
+<div class="about_us">
+    <div class="about_con">
+        <span class="about_bs bs_tit" style="font-size:30px">关于我们</span>
+        <span>深圳市谷铭文化传播有限公司坚持在视觉创意领域进行技术与应用创新</span>
+        <span>开拓业务涵盖<span class="about_bs bs_con">[数字影响/商业设计]</span>两大核心领域</span>
+        <span>致力成为国内最高效的品牌营销整合服务提供商和创新者</span>
+    </div>
+    <div class="yewu">
+        <div class="yewukuo">
+            <img alt="" src="img/勋章.png">
+            <div class="yewu_con">
+                <h3 class="about_bs about_ti">专业执行</h3>
+                <span>以科技成就创意的专业精神,应用领先数字视觉影像和商业设计技能,让内容或产品焕发出独特的吸引力.</span>
+            </div>
+        </div>
+        <div class="yewukuo">
+            <img alt="" src="img/应用中心.png">
+            <div class="yewu_con">
+                <h3 class="about_bs about_ti">资源配置</h3>
+                <span>以强大的跨界资源配置为思想指引，为客户提供全方位总揽式的跨界整台服务.让客户价值最大化</span>
+            </div>
+        </div>
+        <div class="yewukuo">
+            <img alt="" src="img/工具箱.png">
+            <div class="yewu_con">
+                <h3 class="about_bs about_ti">业务广泛</h3>
+                <span>业务涉足行业广泛,成功案例包括诸多重点行业，拥有丰富的实战经历与成熟经验。</span>
+            </div>
+        </div>
+    </div>
+    <div class="hexin">
+        <span class="he_title about_bs">核心优势</span>
+        <div class="hexin_kuo">
+            <div class="hexin_js">
+                <img src="img/奖杯.png">
+                <span>专注十年匠心独运</span>
+            </div>
+            <div class="hexin_js">
+                <img src="img/心形.png">
+                <span>行业十强用心服务</span>
+            </div>
+            <div class="hexin_js">
+                <img src="img/用户管理.png">
+                <span>科学流程团队协作</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ycase">
+    <div class="ycase_head">
+        <span class="about_bs bs_tit" style="font-size: 30px;margin: .2098rem;display: block;">精品案例</span>
+        <div class="ycase_xuan">
+            <div class="y_xuan">数字影像</div>
+            <div>商业设计</div>
+        </div>
+    </div>
+    <div class="cases">
+        <ul>
+            <li>
+                <img alt="" src="img/三维动画1.jpg">
+                <span>招商三维动画</span>
+            </li>
+            <li>
+                <img alt="" src="img/三维动画2.jpg">
+                <span>招商三维动画</span>
+            </li>
+            <li>
+                <img alt="" src="img/三维动画3.jpg">
+                <span>招商三维动画</span>
+            </li>
+            <li>
+                <img alt="" src="img/三维动画4.jpg">
+                <span>招商三维动画</span>
+            </li>
+            <li>
+                <img alt="" src="img/三维动画5.png">
+                <span>招商三维动画</span>
+            </li>
+            <li>
+                <img alt="" src="img/三维动画6.jpg">
+                <span>招商三维动画</span>
+            </li>
+            <li>
+                <img alt="" src="img/三维动画7.png">
+                <span>招商三维动画</span>
+            </li>
+            <li>
+                <img alt="" src="img/三维动画8.png">
+                <span>招商三维动画</span>
+            </li>
+        </ul>
+    </div>
+    <a class="ycase_more" href="#" style="display: none;">查看更多</a>
+</div>
+<div class="khs">
+    <div class="khs_box">
+        <div class="khs_title">
+            <h3 style="font-size: .2797rem;margin-bottom: .0699rem">客户说</h3>
+            <span style="color: #656565">用过的都说好用过的都说好</span>
+        </div>
+        <div class="khs_gun">
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="xianzhi">
+                            <img alt="" src="img/头像.png" style="width: .6294rem;">
+                            <b>PashAush Alakitke</b>
+                            <span>This is a paragraph in order to the empty table of thesentence, he used to fl the role of content</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="xianzhi">
+                            <img alt="" src="img/头像.png" style="width: .6294rem;">
+                            <b>PashAush Alakitke</b>
+                            <span>This is a paragraph in order to the empty table of thesentence, he used to fl the role of content</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="xianzhi">
+                            <img alt="" src="img/头像.png" style="width: .6294rem;">
+                            <b>PashAush Alakitke</b>
+                            <span>This is a paragraph in order to the empty table of thesentence, he used to fl the role of content</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="Industry">
+    <div class="ind_title">
+        <div class="hangye_tit">
+            <span style="font-size: .2098rem;color: black;">行业动态<span style="font-size: .0909rem;color: #666666;">/一键了解行业的资讯</span></span>
+        </div>
+        <div class="hangye_more">more</div>
+    </div>
+    <div class="ind_content">
+        <div class="ind_con_item">
+            <div class="ind_text">
+                <span style="font-size: 15px;margin-bottom: 15px;">现在的设计值钱还是营销值钱?</span>
+                <span>随着居民收入增加和供给侧结构性改革的推进，我国的消费市场正迎来第三次升级转型的浪潮。目前消费市...</span>
+            </div>
+            <div class="ind_tp"></div>
+        </div>
+        <div class="ind_con_item">
+            <div class="ind_text">
+                <span style="font-size: 15px;margin-bottom: 15px;">2017年中国广告营销各细分发展概况分析</span>
+                <span>行业整体增速略高于GDP，新兴媒体快速增长，传统媒体持续下滑。2016年全国广告经营额达到6.489亿...</span>
+            </div>
+            <div class="ind_tp"></div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="foot_box">
+        <div class="foot_div">
+            <b>社交分享</b>
+            <ul>
+                <li><img src="img/微博.png"></li>
+                <li><img src="img/QQ.png"></li>
+                <li><img src="img/微信.png"></li>
+            </ul>
+        </div>
+        <div class="foot_div">
+            <b>精品案例</b>
+            <ul>
+                <li>数字影像</li>
+                <li>商业设计</li>
+            </ul>
+        </div>
+        <div class="foot_div">
+            <b>关于谷铭</b>
+            <ul>
+                <li>关于我们</li>
+                <li>团队架构</li>
+                <li>公司新闻</li>
+            </ul>
+        </div>
+        <div class="foot_div">
+            <b>联系我们</b>
+            <ul>
+                <li>电话：15298657845</li>
+                <li>地址：重庆北碚区</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script>
+    var swiper = new Swiper(".mySwiper1", {
+        // cssMode: true,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        // mousewheel: true,
+        keyboard: true,
+    });
+    var swiper = new Swiper(".mySwiper2", {
+        cssMode: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        mousewheel: true,
+        keyboard: true,
+    });
+</script>
+</body>
+</html>

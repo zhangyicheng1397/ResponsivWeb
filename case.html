@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,
+            initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <link href="http://at.alicdn.com/t/c/font_3280202_xagkc0vczkm.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/head_foot.css">
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/index.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .case_bg {
+            width: 100%;
+            height: 450px;
+            background: url("img/风景.jpg") no-repeat 0 0/100% 450px;
+            margin: 30px 0 0;
+        }
+
+        .case_box {
+            overflow: hidden;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .case_box .case_title {
+            display: flex;
+            justify-content: space-between;
+            width: 250px;
+            height: 50px;
+            margin: 50px auto;
+        }
+
+        .case_box .case_title div {
+            cursor: pointer;
+            width: 110px;
+            height: 50px;
+            box-shadow: 0 0 3px 0 black;
+            font-size: 15px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .case_con {
+            overflow: hidden;
+            width: 100%;
+            /*border: 1px solid yellow;*/
+        }
+
+        .case_con > div {
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 32%;
+            height: 280px;
+            float: left;
+            /*border: 1px solid green;*/
+            margin: .0559rem;
+        }
+
+        .case_con > div img {
+            width: 100%;
+            height: 80%;
+        }
+
+        .case_con > div span {
+            margin-top: 15px;
+            font-size: 20px;
+        }
+
+        .case_lian {
+            width: 120px;
+            height: 30px;
+            /*border: 1px solid red;*/
+            margin: 10px auto;
+        }
+
+        .case_lian ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .case_lian ul li {
+            cursor: pointer;
+            flex: 1;
+            text-align: center;
+            line-height: 30px;
+            font-size: 16px;
+        }
+
+        .case_xuan {
+            background-color: #bf0303;
+            color: white;
+        }
+
+        @media screen and (max-width: 750px) {
+            .case_bg {
+                height: 200px;
+                background: url("img/风景.jpg") no-repeat 0 0/100% 200px;
+            }
+
+            .case_box .case_title {
+                width: 200px;
+            }
+
+            .case_box .case_title div {
+                cursor: pointer;
+                transform: scale(.7);
+            }
+
+            .case_con > div {
+                width: 48%;
+                height: 170px;
+                margin: 10px 3px;
+            }
+
+            .case_con > div span {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="#" class="logo"></a>
+    <ul>
+        <div class="iconfont icon-liebiao2" style="display: none;"></div>
+        <li><a href="index.html" class="nav_xuan">首页</a></li>
+        <li><a href="about_us.html">关于我们</a></li>
+        <li><a href="case.html">精品案例</a></li>
+        <li><a href="Industry.html">行业动态</a></li>
+        <li><a href="team.html">团队架构</a></li>
+        <li><a href="contact.html">联系我们</a></li>
+    </ul>
+</nav>
+<div class="case_bg"></div>
+<div class="case_box">
+    <div class="case_title">
+        <div>数字影视</div>
+        <div>商业设计</div>
+    </div>
+    <div class="case_con">
+        <div>
+            <img src="img/三维动画1.jpg" alt="">
+            <span>招商三维动画</span>
+        </div>
+        <div>
+            <img src="img/三维动画2.jpg" alt="">
+            <span>招商三维动画</span>
+        </div>
+        <div>
+            <img src="img/三维动画3.jpg" alt="">
+            <span>招商三维动画</span>
+        </div>
+        <div>
+            <img src="img/三维动画4.jpg" alt="">
+            <span>招商三维动画</span>
+        </div>
+        <div>
+            <img src="img/三维动画5.png" alt="">
+            <span>招商三维动画</span>
+        </div>
+        <div>
+            <img src="img/三维动画6.jpg" alt="">
+            <span>招商三维动画</span>
+        </div>
+        <div>
+            <img src="img/三维动画7.png" alt="">
+            <span>招商三维动画</span>
+        </div>
+        <div>
+            <img src="img/三维动画8.png" alt="">
+            <span>招商三维动画</span>
+        </div>
+    </div>
+    <div class="case_lian">
+        <ul>
+            <li>&lt;</li>
+            <li class="case_xuan">1</li>
+            <li>2</li>
+            <li>&gt;</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

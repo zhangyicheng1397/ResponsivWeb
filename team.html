@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,
+            initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <link href="http://at.alicdn.com/t/c/font_3280202_xagkc0vczkm.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/head_foot.css">
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/index.js"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .TD_gc {
+            margin: 0 auto;
+        }
+
+        .TD_gc h1 {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .TD_gc p {
+            margin-right: 50px;
+            line-height: 30px;
+        }
+
+        .XX {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 100px;
+        }
+
+        .list {
+            width: 990px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 45px;
+            justify-content: center;
+        }
+
+        .item {
+            width: 425px;
+            height: 300px;
+            margin-left: 10px;
+            padding: 20px 30px;
+            transition: all .5s;
+            margin-bottom: 20px;
+        }
+
+        .item p {
+            font-size: 15px;
+        }
+
+        .item h3 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: red;
+        }
+
+        .item img {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 750px) {
+            .XX {
+                width: 90%;
+                padding-top: 80px;
+            }
+
+            .TD_gc h1 {
+                font-weight: normal;
+            }
+
+            .TD_gc p {
+                font-size: 16px;
+                margin-right: 0;
+            }
+
+            .item {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="#" class="logo"></a>
+    <ul>
+        <div class="iconfont icon-liebiao2" style="display: none;"></div>
+        <li><a href="index.html" class="nav_xuan">首页</a></li>
+        <li><a href="about_us.html">关于我们</a></li>
+        <li><a href="case.html">精品案例</a></li>
+        <li><a href="Industry.html">行业动态</a></li>
+        <li><a href="team.html">团队架构</a></li>
+        <li><a href="contact.html">联系我们</a></li>
+    </ul>
+</nav>
+<div><img src="img/头部(4).png" alt="" width="100%"></div>
+<div class="XX">
+    <div class="TD_gc">
+        <h1>团队构成</h1>
+        <p>
+            谷铭传媒引进前卫管理理念，聚纳文化创意行业高端人才，全面满足客户从梳理项目，战略定位，创意策划，系统执行的各个环节的需求。截止目前，形成了资深顾问团队和多年实战经验执行团队并肩作战!
+        </p>
+    </div>
+    <div class="list">
+        <!-- <div class="item">
+         <img src="img/团队1.png" alt="">
+         <h3 class="name">团队构成: </h3>
+         <p class="price">在一个团队内的人需要具有某方面的技能，可以协助团队整体目标的实现</p>
+       </div>
+       <div class="item">
+           <img src="img/团队1.png" alt="">
+           <h3 class="name">团队构成: </h3>
+           <p class="price">在一个团队内的人需要具有某方面的技能，可以协助团队整体目标的实现</p>
+       </div>  -->
+    </div>
+</div>
+</body>
+<script>
+    const goodsList = [
+        {
+            img: "img/团队1.png",
+            name: "团队构成: ",
+            price: "在一个团队内的人需要具有某方面的技能，可以协助团队整体目标的实现"
+        },
+        {
+            img: "img/团队2.png",
+            name: "团队构成: ",
+            price: "在一个团队内的人需要具有某方面的技能，可以协助团队整体目标的实现"
+        }
+    ]
+    //声明一个字符串变量
+    let str = "";
+    //遍历数组
+    goodsList.forEach(item => {
+        //拼接字符串
+        str += `
+            <div class="item">
+                <img src="${item.img}" alt="">
+                <h3 class="name">${item.name}</h3>
+                <p class="price">${item.price}</p>
+            </div>
+            `
+    })
+    //将拼接好的字符串放到页面中
+    document.querySelector(".list").innerHTML = str;
+</script>
+</html>

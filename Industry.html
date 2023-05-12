@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,
+            initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <link href="http://at.alicdn.com/t/c/font_3280202_xagkc0vczkm.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/head_foot.css">
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/index.js"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /*Industry-css代码start*/
+        .ind_content {
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+            height: 1.2587rem;
+            margin: .1399rem auto;
+        }
+
+        .ind_content .ind_con_item {
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+            flex: 50%;
+            margin: 10px;
+            /* border: 1px solid rebeccapurple; */
+        }
+
+        .ind_content .ind_con_item .ind_text {
+            font-size: .1049rem;
+            color: #666666;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ind_content .ind_con_item:nth-of-type(1) .ind_tp {
+            width: 1.6084rem;
+            height: .8392rem;
+            background: url("img/创意1.jpg") no-repeat 0 0/1.6084rem .8392rem;
+        }
+
+        .ind_content .ind_con_item:nth-of-type(2) .ind_tp {
+            width: 1.6084rem;
+            height: .8392rem;
+            background: url("img/创意2.jpg") no-repeat 0 0/1.6084rem .8392rem;
+        }
+
+        @media screen and (max-width: 750px) {
+            .ind_title .hangye_tit > span {
+                font-size: 22px !important;
+            }
+
+            .ind_content {
+                height: 200px;
+                width: 100%;
+                flex-direction: column;
+            }
+
+            .ind_content .ind_con_item .ind_text {
+                width: 200px;
+            }
+
+            .ind_content .ind_con_item .ind_tp {
+                width: 125px !important;
+                height: 75px !important;
+                background: url("img/创意1.jpg") no-repeat 0 0/125px 75px !important;
+            }
+
+            .ind_content .ind_con_item:nth-child(2) .ind_tp {
+                background: url("img/创意2.jpg") no-repeat 0 0/125px 75px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="#" class="logo"></a>
+    <ul>
+        <div class="iconfont icon-liebiao2" style="display: none;"></div>
+        <li><a href="index.html" class="nav_xuan">首页</a></li>
+        <li><a href="about_us.html">关于我们</a></li>
+        <li><a href="case.html">精品案例</a></li>
+        <li><a href="Industry.html">行业动态</a></li>
+        <li><a href="team.html">团队架构</a></li>
+        <li><a href="contact.html">联系我们</a></li>
+    </ul>
+</nav>
+<div><img src="img/头部3.png" alt="" width="100%"></div>
+<div class="ind_content">
+    <div class="ind_con_item">
+        <div class="ind_text">
+            <span style="font-size: .1399rem;margin-bottom: .1049rem;">现在的设计值钱还是营销值钱?</span>
+            <span>随着居民收入增加和供给侧结构性改革的推进，我国的消费市场正迎来第三次升级转型的浪潮。目前消费市...</span>
+        </div>
+        <div class="ind_tp"></div>
+    </div>
+    <div class="ind_con_item">
+        <div class="ind_text">
+            <span style="font-size: .1399rem;margin-bottom: .1049rem;">2017年中国广告营销各细分发展概况分析</span>
+            <span>行业整体增速略高于GDP，新兴媒体快速增长，传统媒体持续下滑。2016年全国广告经营额达到6.489亿...</span>
+        </div>
+        <div class="ind_tp"></div>
+    </div>
+</div>
+</body>
+</html>

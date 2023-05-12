@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,
+            initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <link href="http://at.alicdn.com/t/c/font_3280202_xagkc0vczkm.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/head_foot.css">
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/index.js"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 16px;
+        }
+        div {
+            margin-bottom: 50px;
+            font-size: 15px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .Lx_FS {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+
+        .Lx_fs {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+
+        .L_ist {
+            display: flex;
+        }
+
+        .list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 0 auto;
+        }
+
+        .item {
+            margin-right: 30px;
+        }
+
+        .item img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .list p {
+            /* margin-top: 10px; */
+
+            margin-bottom: 20px;
+        }
+
+        .L_ist {
+            margin-bottom: 40px;
+        }
+
+        .wrapper {
+            text-align: center;
+        }
+
+        .F_rom {
+            margin: 0 auto;
+            width: 80%;
+
+
+        }
+
+        /* .F_rom form{
+            width: 100%;
+            height: 100%;
+            display: flex;
+        } */
+        .F_rom form input {
+            width: 300px;
+            height: 40px;
+            margin-left: 200px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding-left: 10px;
+        }
+
+        button {
+            border: 2px solid #e6e6e6;
+            border-radius: 5px;
+            background-color: #ffffff;
+        }
+
+        @media screen and (max-width: 750px) {
+            .L_ist {
+                flex-direction: column;
+            }
+
+            .Lx_FS {
+                font-size: 25px;
+                font-weight: normal;
+            }
+
+            #if1 {
+                width: 90%;
+                height: 230px;
+            }
+
+            .F_rom form input {
+                font-size: 15px;
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="#" class="logo"></a>
+    <ul>
+        <div class="iconfont icon-liebiao2" style="display: none;"></div>
+        <li><a href="index.html" class="nav_xuan">首页</a></li>
+        <li><a href="about_us.html">关于我们</a></li>
+        <li><a href="case.html">精品案例</a></li>
+        <li><a href="Industry.html">行业动态</a></li>
+        <li><a href="team.html">团队架构</a></li>
+        <li><a href="contact.html">联系我们</a></li>
+    </ul>
+</nav>
+<div><img src="img/头部.png" alt=""></div>
+<p class="Lx_FS">联系方式</p>
+<p class="Lx_fs">CONTACTU</p>
+<div class="L_ist">
+    <!-- <div class="item">
+        <img src="img/电话.png" alt="">
+    </div>
+    <div>
+        <p>手机: 14709136993</p>
+        <p>QQ: 2187704189</p>
+        <p>微信: 15789482773</p>
+    </div> -->
+</div>
+<p class="Lx_FS">地理位置</p>
+<p class="Lx_fs">LOCATION</p>
+<div class="wrapper">
+    <iframe width="80%" height="600px" src="测试.html" id="if1"></iframe>
+</div>
+<p class="Lx_FS">在线预约</p>
+<p class="Lx_fs">APPOINTMENT</p>
+<div class="F_rom">
+    <form>
+        <input required type="text" placeholder="姓名" name="username">
+        <input required type="text" placeholder="电话" name="phone">
+        <input required type="text" placeholder="邮箱" name="email">
+        <input required type="text" placeholder="地址" name="address">
+    </form>
+</div>
+<div style="border:1px solid #ebebeb"></div>
+<div style="text-align:center;margin-top:20px;">
+    <button type="button" class="amap-ui-btn amap-ui-btn-primary" style="width: 300px;height: 40px;font-size: 15px;">立即提交</button>
+</div>
+</body>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.8&key=42405f1202f784f5dfaef4657fe2338c"></script>
+<script>
+    const goodsList = [
+        {
+            img: "img/电话.png",
+            name: "手机: 14709136993(王经理)",
+            price: "QQ: 2187704189",
+            desc: "微信: 15789482773"
+        },
+        {
+            img: "img/信封1.png",
+            name: '邮箱:2545042512@qq.com',
+            price: '邮箱:awf112042512@126.com',
+            desc: '邮箱:wad12042512@163.com'
+        },
+        {
+            img: "img/位置.png",
+            name: '地址:北京市海淀区中关村软件园',
+            price: '2号地址:环城南路829号',
+            desc: "3号地址: 高雄市大樹區實踐街294號"
+        }
+    ]
+    //声明一个字符串变量
+    let str = "";
+    //遍历数组
+    goodsList.forEach(item => {
+        const {img, name, price, desc} = item;
+        //拼接字符串
+        str += `
+            <div class="list">
+                <div class="item">
+                    <img src="${item.img}" alt="">
+                </div>
+                <div>
+                    <p>${item.name}</p>
+                    <p>${item.price}</p>
+                    <p>${item.desc}</p>
+                </div>
+            </div>
+            `
+    })
+    //将拼接好的字符串放到页面中
+    document.querySelector(".L_ist").innerHTML = str;
+    //初始化地图组件
+    window.onload = function () {
+        var map = new AMap.Map('wrapper');
+    }
+</script>
+</html>
